@@ -1,0 +1,35 @@
+GET localhost:8080/api/runs
+
+###
+
+GET localhost:8080/api/runs/2
+
+###
+
+POST localhost:8080/api/runs
+Content-Type: application/json
+
+{
+  "id": null,
+  "location": "Somewhere in the line",
+  "startedOn": "2024-02-27T16:00:12.49766",
+  "completedOn": "2024-02-27T16:01:12.49766"
+}
+
+###
+
+PUT localhost:8080/api/runs/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "location": "Another place in the line",
+  "startedOn": "2024-02-27T16:00:12.49766",
+  "completedOn": "2024-02-27T16:01:12.49766"
+}
+
+###
+
+DELETE localhost:8080/api/runs/1
+
+####
